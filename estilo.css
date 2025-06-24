@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(246, 236, 236);
+}
+h1{
+    color: rgb(72, 75, 76);
+    text-size-adjust: 100px;
+    padding-left: 0%;
+    border-color: black;
+    text-align:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu-boton{
+    background-color: rgb(252, 118, 176);
+    color: rgb(76, 22, 22);
+    padding-top: 100px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor:help;
+    transition: background-color 0.3s, trans;
+    animation:aparecer 1.5s ease-out forwards;
+    opacity: 0; /*empieza invisible*/
+}
+@keyframes aparecer {
+0% {
+opacity: 0;
+transform: translateY(100px);
+}
+100%{
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.menu-boton:hover{
+    background-color: rgb(166, 175, 228);
+    color: rgb(190, 152, 255);
+    transition: background-color 9s transform 10s;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(114, 104, 233);
+    color: azure;
+    text-align: center;
+    
+    padding: 12px;
+    z-index: 1000;
+}
+header{
+    text-align: center;
+    animation: aparecer 1.5s ease-out forwards;
+    opacity: 0; /* empieza invisible */
+}
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+.productos_contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, lfr));
+    gap: 20px;
+    padding: 5px;
+}
+
+.producto {
+    background-color:  rgb(rgb(236, 213, 213));
+    border-radius: 12px;    
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 10px;
+}
+
+
+main{
+text-align: center;
+} 
+
+
